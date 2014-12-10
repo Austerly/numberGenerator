@@ -1,0 +1,14 @@
+h1 {
+	display: inline-block;
+}
+h1:after {
+	content: ", ";
+	position: relative;
+	left: -9px;
+}
+h1:last-child:after {
+	content: "";
+}
+button:focus {
+	border: inherit;
+}

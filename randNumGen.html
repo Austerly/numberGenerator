@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Random Number Generator</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<body ng-app="numGenApp">
+	<div ng-controller="numGenControl">
+	<h3>How many random numbers would you like?</h3>
+	<p>
+		<input type='number' ng-model="test">
+	</p>
+	<p>
+		<button ng-click="numberGenerator(test);">New Random Numbers</button>
+	</p>
+	<h1 ng-model="numberGroup" ng-repeat="numbers in numberGroup track by $index">
+		{{numbers}}
+	</h1>
+	</div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0/angular.min.js"></script>
+<script src="numGenApp.js"></script>
+</html>
